@@ -1,9 +1,4 @@
-[![Build Status](https://travis-ci.org/Qucs/qucs.svg?branch=master)](https://travis-ci.org/Qucs/qucs)
-[![Build status](https://ci.appveyor.com/api/projects/status/6wm4mmnk59h7soh1/branch/master?svg=true)](https://ci.appveyor.com/project/qucs/qucs/branch/master)
-[![Coverage Status](https://img.shields.io/coveralls/Qucs/qucs.svg)](https://coveralls.io/r/Qucs/qucs?branch=master)
-
-## QUCS - Quite Universal Circuit Simulator
-
+## QUCS-PKG - Quite Universal Circuit Simulator Packaging
 
 Qucs is an integrated circuit simulator which means you are able to setup a circuit with a graphical user interface (GUI) and simulate the large-signal, small-signal and noise behaviour of the circuit. After that simulation has finished you can view the simulation results on a presentation page or window.
 
@@ -28,18 +23,9 @@ Qucs is an integrated circuit simulator which means you are able to setup a circ
   - FreeBSD
   - Windows
 
-## Branching strategy for the Git repository
-
-After release 0.0.18 the project started to use the Git flow strategy for branching <http://nvie.com/posts/a-successful-git-branching-model/>.
-
-Under this strategy the following branches can be found in the repository:
-
-  - `master`: contains the latest stable release.
-  - `develop`: contains the latest developments or unstable. This should be the base branch of Pull-Requests or contributions.
-  - `release-x.y.z`: are temporary branches being stabilized for a release. To be merged into `master` and removed.
-  - `[other branches]`: are branches with a good reason to be in the main repository (ease collaboration, use CI facilities).
-
 ## Source Download and Compilation
+
+TODO: update these sections.
 
 The source code is available as distribution tarballs and clones of the Git repository.
 
@@ -53,11 +39,11 @@ Compilation and install from tarball is expected to work as follows (see depende
 
 All versions of the code may be accessed by cloning one of the Git repositories (the first is updated more frequently):
 
-    git clone git://github.com/Qucs/qucs.git
-    git clone git://git.code.sf.net/p/qucs/git
+    git clone git://github.com/Qucs/qucs-pkg.git
+    git clone git://git.code.sf.net/p/qucs/git @ not yet
 
-Both, qucsator (simulator) and qucs-test (test suite) are provided as Git
-submodules. To retrieve the submodules you may
+Packages such as, qucsator (simulator) and qucs-test (test suite) are provided
+as Git submodules. To retrieve the submodules you may
 
    * clone submodules recursively:
      * `git clone --recursive [repository]`
@@ -144,11 +130,7 @@ Note:
  * Consider INSTALL and the output of `./configure --help` for more and
    definitive build options.
 
-
-## Binary Installation
-
-Some of the platform specific pre-compile binary packages containing installers can be found at <https://sourceforge.net/projects/qucs/files/qucs-binary/>.
-
 ## License
 
-Qucs is under GNU General Public License, version 2.0+. See COPYING file.
+Qucs is under GNU General Public License, version 2.0 or 3.0 or any later
+version. See COPYING file.
